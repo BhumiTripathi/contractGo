@@ -1,0 +1,6 @@
+framework module Pods_ContractGo {
+  umbrella header "Pods-ContractGo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="viewForColumnSelection" customModule="ContractGo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ev9-2Z-ajs">
+                    <rect key="frame" x="100" y="70" width="368" height="225"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Column" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QY-FA-QJP">
+                            <rect key="frame" x="10" y="10" width="348" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="hgg-mI-WUU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOG-yI-MRP">
+                            <rect key="frame" x="20" y="48" width="328" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="23N-co-yvi"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Column Select First Row" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q5-BG-xID">
+                            <rect key="frame" x="20" y="57" width="158" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="AqF-Fj-rSa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Column Select Second Row" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="972-G7-QVL">
+                            <rect key="frame" x="184" y="57" width="179" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Ldf-kG-DUk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJK-cf-X3n">
+                            <rect key="frame" x="20" y="85" width="158" height="125"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="r40-rC-vNT">
+                                    <rect key="frame" x="0.0" y="5" width="158" height="22"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xI6-2M-fYY">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title=" Part Number" image="checkmark.rectangle.fill" catalog="system">
+                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnPartNumberSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="Px1-9R-gpU"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niM-SE-BCC">
+                                            <rect key="frame" x="83" y="0.0" width="75" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title=" Description" image="checkmark.square.fill" catalog="system">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnDescriptionSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="blJ-9B-u48"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E35-SA-doV">
+                                    <rect key="frame" x="0.0" y="37" width="158" height="22"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwr-NU-u8A">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title=" Qty" image="checkmark.rectangle.fill" catalog="system">
+                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnQtySelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="qn0-cG-nwL"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9R-3i-USy">
+                                            <rect key="frame" x="83" y="0.0" width="75" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title=" List" image="checkmark.square.fill" catalog="system">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnListSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="qjr-uE-hE9"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MSd-gi-bOD">
+                                    <rect key="frame" x="0.0" y="69" width="158" height="22"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jo5-v1-TTJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title=" Buy" image="checkmark.rectangle.fill" catalog="system">
+                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnBuySelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="Gj3-U6-iDp"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9F-PA-keZ">
+                                            <rect key="frame" x="83" y="0.0" width="75" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title=" Sell" image="checkmark.square.fill" catalog="system">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnSellSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="ocw-8O-OuP"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eIu-mc-2Yw">
+                                    <rect key="frame" x="0.0" y="101" width="158" height="22"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmp-Iv-qF0">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title=" Margin %" image="checkmark.rectangle.fill" catalog="system">
+                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnMarginSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="wpI-nY-Z4u"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="E35-SA-doV" firstAttribute="leading" secondItem="r40-rC-vNT" secondAttribute="leading" id="2oY-g3-bTo"/>
+                                <constraint firstItem="MSd-gi-bOD" firstAttribute="trailing" secondItem="E35-SA-doV" secondAttribute="trailing" id="4lK-bY-9ZM"/>
+                                <constraint firstAttribute="bottom" secondItem="eIu-mc-2Yw" secondAttribute="bottom" constant="2" id="CFt-oB-xSR"/>
+                                <constraint firstItem="eIu-mc-2Yw" firstAttribute="height" secondItem="MSd-gi-bOD" secondAttribute="height" id="EYu-cM-Roa"/>
+                                <constraint firstAttribute="trailing" secondItem="r40-rC-vNT" secondAttribute="trailing" id="Fex-MH-pm1"/>
+                                <constraint firstItem="MSd-gi-bOD" firstAttribute="height" secondItem="E35-SA-doV" secondAttribute="height" id="I8D-pG-Myc"/>
+                                <constraint firstItem="MSd-gi-bOD" firstAttribute="top" secondItem="E35-SA-doV" secondAttribute="bottom" constant="10" id="QF0-Q4-Pzq"/>
+                                <constraint firstItem="E35-SA-doV" firstAttribute="height" secondItem="r40-rC-vNT" secondAttribute="height" id="Vdu-M6-A6S"/>
+                                <constraint firstItem="eIu-mc-2Yw" firstAttribute="trailing" secondItem="MSd-gi-bOD" secondAttribute="trailing" id="WHT-UY-cT3"/>
+                                <constraint firstItem="E35-SA-doV" firstAttribute="top" secondItem="r40-rC-vNT" secondAttribute="bottom" constant="10" id="euI-vf-LSI"/>
+                                <constraint firstItem="eIu-mc-2Yw" firstAttribute="leading" secondItem="MSd-gi-bOD" secondAttribute="leading" id="fvP-zo-QCT"/>
+                                <constraint firstItem="r40-rC-vNT" firstAttribute="top" secondItem="mJK-cf-X3n" secondAttribute="top" constant="5" id="qvb-Z4-7qr"/>
+                                <constraint firstItem="r40-rC-vNT" firstAttribute="height" secondItem="mJK-cf-X3n" secondAttribute="height" multiplier="0.176" id="r6B-kK-KeR"/>
+                                <constraint firstItem="eIu-mc-2Yw" firstAttribute="top" secondItem="MSd-gi-bOD" secondAttribute="bottom" constant="10" id="rwH-kg-txj"/>
+                                <constraint firstItem="r40-rC-vNT" firstAttribute="leading" secondItem="mJK-cf-X3n" secondAttribute="leading" id="sbK-Lb-7tk"/>
+                                <constraint firstItem="E35-SA-doV" firstAttribute="trailing" secondItem="r40-rC-vNT" secondAttribute="trailing" id="tmh-yR-Auu"/>
+                                <constraint firstItem="MSd-gi-bOD" firstAttribute="leading" secondItem="E35-SA-doV" secondAttribute="leading" id="xo7-63-2Db"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAX-v1-KRP">
+                            <rect key="frame" x="184" y="87" width="179" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="M75-In-YZL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title=" Extended Column" image="checkmark.rectangle.fill" catalog="system">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="btnExtendedColumnSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="HHS-io-mh8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jW3-af-wp4">
+                            <rect key="frame" x="302" y="8" width="46" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="ZMR-Nr-3bE"/>
+                                <constraint firstAttribute="height" constant="32" id="sTF-zp-alj"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="clear" catalog="system"/>
+                            <connections>
+                                <action selector="btnCloseViewAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="9tu-SC-gdY"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5DT-2K-Ac9">
+                            <rect key="frame" x="20" y="220" width="158" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o4-dT-x8y">
+                                    <rect key="frame" x="0.0" y="0.0" width="71.5" height="40"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="w79-yN-dvJ"/>
+                                    </constraints>
+                                    <state key="normal" title="LOAD">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnLoadSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="rrQ-xU-kev"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvj-gy-eaA">
+                                    <rect key="frame" x="86.5" y="0.0" width="71.5" height="40"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="SAVE">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSaveAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1Ku-yO-hI5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BdX-cI-cBY"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="5DT-2K-Ac9" firstAttribute="top" secondItem="mJK-cf-X3n" secondAttribute="bottom" constant="10" id="0vX-NP-gWG"/>
+                        <constraint firstAttribute="trailing" secondItem="972-G7-QVL" secondAttribute="trailing" constant="5" id="6fT-1I-JdQ"/>
+                        <constraint firstItem="9q5-BG-xID" firstAttribute="top" secondItem="UOG-yI-MRP" secondAttribute="bottom" constant="8" id="6i3-Zt-X9b"/>
+                        <constraint firstItem="972-G7-QVL" firstAttribute="width" secondItem="9q5-BG-xID" secondAttribute="width" multiplier="1.13258" id="7BQ-hs-SKq"/>
+                        <constraint firstItem="qAX-v1-KRP" firstAttribute="top" secondItem="972-G7-QVL" secondAttribute="bottom" constant="10" id="D6u-no-SYP"/>
+                        <constraint firstItem="mJK-cf-X3n" firstAttribute="leading" secondItem="9q5-BG-xID" secondAttribute="leading" id="Dde-UN-Uiw"/>
+                        <constraint firstItem="5QY-FA-QJP" firstAttribute="leading" secondItem="Ev9-2Z-ajs" secondAttribute="leading" constant="10" id="IvT-im-aZM"/>
+                        <constraint firstAttribute="trailing" secondItem="5QY-FA-QJP" secondAttribute="trailing" constant="10" id="Lb5-A1-4rj"/>
+                        <constraint firstItem="mJK-cf-X3n" firstAttribute="trailing" secondItem="9q5-BG-xID" secondAttribute="trailing" id="NDO-6X-dvJ"/>
+                        <constraint firstItem="UOG-yI-MRP" firstAttribute="leading" secondItem="Ev9-2Z-ajs" secondAttribute="leading" constant="20" id="NZa-zy-fKr"/>
+                        <constraint firstItem="qAX-v1-KRP" firstAttribute="trailing" secondItem="972-G7-QVL" secondAttribute="trailing" id="PDT-di-Bei"/>
+                        <constraint firstItem="jW3-af-wp4" firstAttribute="trailing" secondItem="UOG-yI-MRP" secondAttribute="trailing" id="RPq-Qv-X7j"/>
+                        <constraint firstAttribute="trailing" secondItem="UOG-yI-MRP" secondAttribute="trailing" constant="20" id="Sz6-cO-36k"/>
+                        <constraint firstItem="5QY-FA-QJP" firstAttribute="top" secondItem="Ev9-2Z-ajs" secondAttribute="top" constant="10" id="XuP-UF-0F6"/>
+                        <constraint firstItem="9q5-BG-xID" firstAttribute="leading" secondItem="Ev9-2Z-ajs" secondAttribute="leading" constant="20" id="ZKh-Af-fLb"/>
+                        <constraint firstItem="972-G7-QVL" firstAttribute="top" secondItem="9q5-BG-xID" secondAttribute="top" id="ZU8-A7-CxK"/>
+                        <constraint firstItem="5DT-2K-Ac9" firstAttribute="leading" secondItem="mJK-cf-X3n" secondAttribute="leading" id="biE-1B-OwJ"/>
+                        <constraint firstItem="mJK-cf-X3n" firstAttribute="top" secondItem="9q5-BG-xID" secondAttribute="bottom" constant="8" id="exB-eL-QM4"/>
+                        <constraint firstItem="9q5-BG-xID" firstAttribute="width" secondItem="Ev9-2Z-ajs" secondAttribute="width" multiplier="0.43" id="im9-Fb-Jce"/>
+                        <constraint firstItem="UOG-yI-MRP" firstAttribute="top" secondItem="5QY-FA-QJP" secondAttribute="bottom" constant="8" id="maR-Ai-H9S"/>
+                        <constraint firstItem="qAX-v1-KRP" firstAttribute="leading" secondItem="972-G7-QVL" secondAttribute="leading" id="p5U-Yu-yJm"/>
+                        <constraint firstItem="5QY-FA-QJP" firstAttribute="centerX" secondItem="Ev9-2Z-ajs" secondAttribute="centerX" id="rxY-et-ffF"/>
+                        <constraint firstItem="jW3-af-wp4" firstAttribute="top" secondItem="Ev9-2Z-ajs" secondAttribute="top" constant="8" id="vYl-Kg-DQj"/>
+                        <constraint firstItem="5DT-2K-Ac9" firstAttribute="trailing" secondItem="mJK-cf-X3n" secondAttribute="trailing" id="yZn-EB-iZ4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ev9-2Z-ajs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="BiU-7V-8Zc"/>
+                <constraint firstItem="Ev9-2Z-ajs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="IPI-2l-Pgz"/>
+                <constraint firstAttribute="bottom" secondItem="Ev9-2Z-ajs" secondAttribute="bottom" constant="25" id="Vip-Pb-fCe"/>
+                <constraint firstAttribute="trailing" secondItem="Ev9-2Z-ajs" secondAttribute="trailing" constant="100" id="vE5-XA-2oc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.38028169014083" y="101.25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark.rectangle.fill" catalog="system" width="64" height="46"/>
+        <image name="checkmark.square.fill" catalog="system" width="64" height="56"/>
+        <image name="clear" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
